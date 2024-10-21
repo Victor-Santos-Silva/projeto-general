@@ -16,7 +16,12 @@ export default function Home() {
                 buttonText="Ir para sobre."
                 onPress={() => navigation.navigate('Sobre')}
             />
-
+            <Card
+                title="Fac"
+                content="Veja as perguntas do Fac."
+                buttonText="Ir para Fac."
+                onPress={() => navigation.navigate('Fac')}
+            />
             <Card
                 title="Contato"
                 content="Entre em contato conosco"
@@ -24,12 +29,6 @@ export default function Home() {
                 onPress={() => navigation.navigate('Contato')}
             />
 
-            <Card
-                title="Fac"
-                content="Veja as perguntas do Fac."
-                buttonText="Ir para Fac."
-                onPress={() => navigation.navigate('Fac')}
-            />
             {/* <Button
                 title="Ir para Contato"
                 onPress={() => navigation.navigate('Contato')}

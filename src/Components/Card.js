@@ -16,7 +16,7 @@ export default function Card(props) {
 
 const style = StyleSheet.create({
     card: {
-        backgroundColor: "#dc77d8",
+        backgroundColor: "#4324d4",
         borderRadius: 10,
         padding: 15,
         marginTop: 12,
@@ -25,11 +25,15 @@ const style = StyleSheet.create({
         shadowRadius: 1.41
     },
     cardTitle: {
+        textAlign: "center",
+        color: "white",
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 10
     },
     cardContent: {
+        textAlign: "center",
+        color: "white",
         fontSize: 14,
         marginBottom: 10
     }
