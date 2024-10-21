@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <View style={styles.container}>
             <Text style={styles.tituloContato}>Seja Bem-Vindo!</Text>
-
+            <Text style={styles.tituloInfo}>Mais informações.</Text>
             <Card
                 title="Sobre"
                 content="Saiba mais sobre nos e nossos servicos."
@@ -17,13 +17,18 @@ export default function Home() {
                 onPress={() => navigation.navigate('Sobre')}
             />
 
-            <Text style={styles.tituloInfo}>Mais informações.</Text>
-
             <Card
                 title="Contato"
                 content="Entre em contato conosco"
                 buttonText="Ir para Contato."
                 onPress={() => navigation.navigate('Contato')}
+            />
+
+            <Card
+                title="Fac"
+                content="Veja as perguntas do Fac."
+                buttonText="Ir para Fac."
+                onPress={() => navigation.navigate('Fac')}
             />
             {/* <Button
                 title="Ir para Contato"

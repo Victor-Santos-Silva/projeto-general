@@ -1,0 +1,31 @@
+{
+    "contatos": [
+        {
+            "id": "1",
+            "nome": "Victor",
+            "telefone": "11912345678"
+        },
+        {
+            "id": "2",
+            "nome": "Henrique",
+            "telefone": "1212345678"
+        }
+    ],
+    "fac": [
+        {
+            "id": 1,
+            "pergunta": "O que é JSON Server?",
+            "resposta": "Json Server é uma ferramenta que permite ..."
+        },
+        {
+            "id": 2,
+            "pergunta": "Como instalar o JSON Server?",
+            "resposta": "Você pode instalar o JSON Server usando o npm com ..."
+        },
+        {
+            "id": 3,
+            "pergunta": "Posso usar o JSON Server em produção?",
+            "resposta": "JSON Server é ótimo para desenvolvimento ..."
+        }
+    ]
+}

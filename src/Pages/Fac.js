@@ -2,38 +2,38 @@ import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import axios from 'axios';
 
-export default function Sobre() {
-    const [contatos, setContatos] = useState([])
+export default function Fac() {
+    const [fac, setfac] = useState([])
 
     // funcao para buscar contatos do servidor
-    const listContatos = () => {
+    const listFac = () => {
         axios
-            .get("http://10.0.2.2:3000/contatos")
+            .get("http://10.0.2.2:3000/fac")
             .then((resposta) => {
-                setContatos(resposta.data)
+                setfac(resposta.data)
             })
             .catch((error) => {
-                console.error("Erro ao buscar conatos.", error);
+                console.error("Erro ao buscar Fac.", error);
             })
     }
 
     // Use o useEffect para buscar dados
     useEffect(() => {
-        listContatos();
+        listFac();
     }, [])
 
     return (
         <View style={style.container}>
-            <Text style={style.title}>Lista de Contatos</Text>
-            {contatos.length > 0 ? (
-                contatos.map((contato, index) => (
+            <Text style={style.title}>Lista de Fac</Text>
+            {fac.length > 0 ? (
+                fac.map((fac, index) => (
                     <View key={index} style={style.contatoItem}>
-                        <Text>{contato.nome}</Text>
-                        <Text>{contato.telefone}</Text>
+                        <Text>{fac.pergunta}</Text>
+                        <Text>{fac.resposta}</Text>
                     </View>
                 ))
             ) : (
-                <Text style={style.noContacts}>Nenhum contato disponivel.</Text>
+                <Text style={style.noContacts}>Nenhum fac disponivel.</Text>
             )
             }
         </View >
